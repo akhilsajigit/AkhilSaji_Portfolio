@@ -8,10 +8,10 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
         
         <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
         
         <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/css/styles.css">
 
         <title>Akhil Saji</title>
     </head>
@@ -595,9 +595,68 @@
 
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
-                
-            </section>
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">My rectent works</span>
 
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== PORTFOLIO 1====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/Gym.png" alt="img" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Zacson Fitness</h3>
+                                <p>This is a modern website that user can easily attend online workout sessions, cart gym accaessories, trainer registration
+                                    and easy gym registration with emaill vari payments</p>
+                                <a href="#" class="button button--flex button--small portfolio__button ">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--==================== PORTFOLIO 2====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/coffee.jpg" alt="img" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Coffee</h3>
+                                <p>This is a modern website that user can easily attend online workout sessions, cart gym accaessories, trainer registration
+                                    and easy gym registration with emaill vari payments</p>
+                                <a href="#" class="button button--flex button--small portfolio__button ">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--==================== PORTFOLIO 3====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/social-media.jpg" alt="img" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Social Media</h3>
+                                <p>This is a modern website that user can easily attend online workout sessions, cart gym accaessories, trainer registration
+                                    and easy gym registration with emaill vari payments</p>
+                                <a href="#" class="button button--flex button--small portfolio__button ">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add arrows -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+
+                    <!-- Add Pagination -->
+                     <div class="swiper-pagination"></div>
+                </div>
+            </section>
             <!--==================== PROJECT IN MIND ====================-->
             <section class="project section">
 
@@ -623,7 +682,7 @@
         
 
         <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
