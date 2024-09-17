@@ -25,7 +25,7 @@ const navLink = document.querySelectorAll('.nav__link')
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
     // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show-menu ')
+    navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
@@ -171,13 +171,20 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-/*==================== REMOVE MENU MOBILE ====================*/
-const nav_Link = document.querySelectorAll('.nav__link')
+/*==================== Download file location change ====================*/ 
+// Get the download button
+const downloadButton = document.querySelector('.download_btn');
 
-function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show-menu')
-}
-nav_Link.forEach(n => n.addEventListener('click', linkAction))
+// Add event listener
+downloadButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  
+  // Create a temporary link
+  const link = document.createElement('a');
+  link.href = 'assets/pdf/Akhil_Saji_Resume.pdf';
+  link.download = 'Akhil_Saji_Resume.pdf';
+  
+  // Simulate click event
+  link.click();
+});
 
