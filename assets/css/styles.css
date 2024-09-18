@@ -862,7 +862,7 @@ img{
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 350px){
+@media screen and (max-width: 352px){
   .container{
     margin-left: var(--mb-1);
   }
@@ -897,10 +897,14 @@ img{
   .project__img{
     width: 200px;
   }
+  #msg{
+    color: #ff1797;
+    transform: translateX(0rem);
+  }
 }
 
 /* For medium devices */
-@media screen and (min-width: 568px){
+@media screen and (min-width: 570px){
   .home__content{
     grid-template-columns: max-content 1fr 1fr;
   }
@@ -1079,6 +1083,10 @@ img{
   .footer__copy{
     margin-top: 4.5rem;
   }
+  #msg{
+    color: #ff1797;
+    transform: translateX(9rem);
+  }
 }
 /* For large devices */
 @media screen and (min-width: 1024px){
@@ -1120,5 +1128,9 @@ img{
   }
   .contact__inputs{
     grid-template-columns: repeat(2, 1fr);
+  }
+  #msg{
+    color: #ff1797;
+    transform: translateX(19rem);
   }
 }
